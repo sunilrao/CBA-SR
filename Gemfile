@@ -3,6 +3,11 @@ source 'http://rubygems.org'
 gem 'rails', '>=3.0.3'
 gem 'jquery-rails'  
 
+gem "simple_form"
+
+gem "haml", ">= 3.0.0"
+gem "haml-rails"
+
 # Bundle gems needed for Mongoid
 gem "mongoid", ">=2.0.0.beta.20"
 gem "bson_ext", ">=1.1.5"
@@ -17,14 +22,16 @@ gem "mongoid-paperclip", :require => "mongoid_paperclip"
 
 # Bundle gems for views
 gem "will_paginate"
-gem "RedCloth", "4.2.5"
-gem "rdiscount"
+gem "RedCloth"
 
 # Bundle gems for development 
 group :development do
   gem "nifty-generators"
   gem "rails-erd"
   gem 'rdoc'
+  gem 'hpricot'
+  gem 'ruby_parser'
+
 end
 
 # Bundle gems for testing
